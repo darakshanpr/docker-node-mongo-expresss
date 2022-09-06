@@ -33,6 +33,7 @@ recordRoutes.route('/listings/recordSwipe').post(function (req, res) {
             }
         });
 });
+
 recordRoutes.route('/listings/swipeList').get(function (req, res) {
     const dbConnect = getDb();
 
@@ -41,6 +42,9 @@ recordRoutes.route('/listings/swipeList').get(function (req, res) {
         .find({}).toArray().then(ff => {
             res.json(ff)
         });
+});
+recordRoutes.route('/health').get(function (req, res) {
+    res.json({ok: true, message: "I am Panda. Look how good I am climbing 😃"})
 });
 
 
