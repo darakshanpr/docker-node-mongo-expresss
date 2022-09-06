@@ -44,7 +44,7 @@ recordRoutes.route('/listings/swipeList').get(function (req, res) {
         });
 });
 recordRoutes.route('/health').get(function (req, res) {
-    res.json({ok: true, message: "I am Panda. Look how good I am climbing 😃"})
+    res.json({ok: true, message: "I am Aquarius. Look how good I am twinkling ♒"})
 });
 
 
