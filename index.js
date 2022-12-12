@@ -60,7 +60,7 @@ app.use(function (err, _req, res) {
 
 // perform a database connection when the server starts
 conn({
-    host:   "localhost:27017"  // "mongodb:27017",
+    host:   "localhost:27017",  // "mongodb:27017",
     // host: ""
     pw: false,
     un: false,
